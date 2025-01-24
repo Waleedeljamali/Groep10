@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/WebsiteCSS.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="Iheader">
+        <h1>Contact</h1>
+        <img src="../img/LogoGildeDevopsSolutions.png"alt="LogoGildeDevops">
+    </header>
+<nav>
+    <ul>
+        <li>
+            <div class="dropup">
+                <button class="dropbtn">Medewerkers</button>
+                <div class="dropup-content">
+                  <a href="Jur.html">Jur Bonekamp</a>
+                  <a href="Smoelenboek Pagina van MuhammedV2.html">Muhammed Bozok</a>
+                  <a href="Annamaria.html">Annemaria Selawa</a>
+                  <a href="HTML voor Waleed.html">Waleed Eljamali</a>
+                </div>
+              </div>
+        </li>
+        <div id="Knoppen">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WieIsWie.html">Medewerkers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+    </ul>
+</nav>
+<main id="CMain">
+    <div class="formulier">
+        <form action="mailto:Muhammed.Bozok@student.gildeopleidingen.nl, Jur.Bonekamp@student.gildeopleidingen.nl, Annemaria.Selewa@student.gildeopleeidingen.nl, Waleed.Eljamali@student.gildeopleidingen.nl" method="post" enctype="text/plain">
+            <h2>Contact Formulier</h2>
+
+            <div class="Titel">
+                <input type="text" name="Titel" id="Titel" placeholder="Titel" required>
+            </div>
+
+            <div class="Email">
+                <input type="text" name="Email" id="Email" placeholder="Email" required>
+            </div>
+
+            <div class="Telefoonnummer">
+                <input type="Text" name="Telefoonnummer" id="telefoonnummer" placeholder="Telefoonnummer" required>
+            </div>
+
+            <div class="Tops">
+                <textarea name="Tops" id="Tops" placeholder="Geef uw tops.." rows="4" cols="37"></textarea required>
+            </div>
+
+            <div class="Tips">
+                <textarea name="Tips" id="Tips" placeholder="Geef uw tips.." rows="4" cols= "37"></textarea required>
+            </div>
+
+
+            <input type="submit" value="Send" class="Submit">
+            <p id="Formp">Let op: Er komt een email voor de hele devops team.</p>
+
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

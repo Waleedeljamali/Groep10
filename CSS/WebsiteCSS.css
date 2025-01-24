@@ -1,0 +1,535 @@
+/* Een # betekent dat het 1 keer gebruikt is (ID) en een . betekent dat het meerdere keren word gebruikt (Class) */
+
+/*------------------------------------------------------->       Index        <-------------------------------------------------------- */
+
+#Ibody {
+  color: #00365e;
+  background-color: white;
+}
+
+.Iheader{
+  display: grid;
+  grid-template-columns: 9fr 2fr;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 25px;
+  color: white;
+  background-color: #dd0069;
+  height: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+header h1{
+  text-align: center;
+  font-size: 50px;
+  margin-top: -0.05%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header h1{
+    margin-left: 0%;
+  }
+
+}
+
+header img{
+    width: 150px;
+    height: 75px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: -2.5%;
+    margin-right: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  header img {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
+#Imain{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-self: center;
+  height: 700px;
+  width: 50%;
+}
+
+
+#Iright-section {
+  background-color: #dd0069;
+  color: white;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#Iinfo-boxes {
+  border-top: 1px solid #00365e;
+  margin-top: 30px;
+}
+
+/*------------------------------------------------------->   Navigatie Bar   <-------------------------------------------------------- */
+
+/* Hier is het dat we dit overal gebruiken. */
+
+nav{
+  border-bottom: 2px solid #00365e;
+  color: #00365e;
+  font-size: 20px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.dropbtn {
+  color: white;
+  padding: 6px;
+  padding-right: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #00365e;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  bottom: 30px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: #00365e;
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {background-color: lightcyan}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #00365e;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:visible;
+}
+
+li {
+  float: left;
+  padding-right: 20px;
+}
+
+li a {
+  display: flex;
+  flex-direction: column;
+  color: #00365e;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+li a:hover {
+  background-color: #00365e;
+  color: white;
+}
+li div a:hover{
+  color: #00365e;
+}
+li div a{
+  margin-left: 0;
+  width: 87%;
+}
+
+/*------------------------------------------------------->     Wie is wie?   <-------------------------------------------------------- */
+
+.Wmain{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 5%;
+}
+
+.Wperson {
+  margin-left: 50px;
+  text-align: center;
+  width: 260px;
+}
+
+@media only screen and (max-width: 900px) {
+  .Wmain {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+
+}
+.Wperson a{
+  text-decoration: none;
+}
+
+.Winfo-box {
+  
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #dd0069;
+    color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/*------------------------------------------------------->    Muhammed CSS   <-------------------------------------------------------- */
+
+#Mbody {
+  position: flex;
+  background-color: lightblue;
+  overflow-x: hidden;
+}
+
+#Mh1 {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+#MIntroductie {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  margin: 0.5%;
+  padding: 1.5%;
+  justify-items: center;
+  justify-self: center;
+}
+
+#MIntroductie > h1 {
+  font-size: 25px;
+}
+
+#Mimg {
+  height: 220px;
+  width: 250px;
+}
+
+#MWiebenik {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  width: 400px;
+  justify-items: center;
+  justify-self: center;
+  order: 1;
+}
+
+#MMeerovermij {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  width: 400px;
+  height: 220px;
+  justify-items: center;
+  justify-self: center;
+}
+
+/*------------------------------------------------------->      Jur CSS     <-------------------------------------------------------- */
+
+#Jbody {
+  color: darkcyan;
+  background-color: lightcyan;
+}
+
+#Jheader {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 25px;
+  color: aliceblue;
+  background-color: darkcyan;
+  height: 100px;
+}
+
+main{
+  display: grid;
+  grid-template-columns:3fr 3fr 2fr;
+}
+
+.flex-container {
+  display: grid;
+  background-color: lightcyan;
+  margin-top: 5px;
+}
+
+.flex-container > div {
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  width: 80%;
+  margin: 5px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+#Jmain {
+    display: flex;
+    flex-direction: column;
+  }
+
+.flex-container > div {
+  font-size: 20px;
+}
+
+div > img {
+  width: 120px;
+  height: 120px;
+}
+
+}
+
+nav {
+  border-bottom: 2px solid darkcyan;
+  color: darkcyan;
+  font-size: 20px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+
+img { 
+  margin-top: 20px;
+  border: 2px solid darkgreen;
+}
+
+/*------------------------------------------------------->    Annemaria CSS   <-------------------------------------------------------- */
+
+#Aheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  border-radius: 50px;
+  height: 100px;
+  margin-bottom: 1%;
+}
+
+#Aheader > h1 {
+  margin-bottom: 0%;
+}
+
+#abody {
+  background-color: rgb(157, 0, 157);
+}
+
+#aintroductie {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: pink;
+  border-radius: 50px;
+}
+
+#apersoonlijk {
+  background-color: pink;
+  border-radius: 50px;
+  margin: 0.5%;
+  padding: 1.5%;
+  justify-items: center;
+  justify-self: center;
+}
+
+#aschool {
+  background-color: pink;
+  border-radius: 50px;
+  margin: 0.5%;
+  padding: 1.5%;
+  justify-items: center;
+  justify-self: center;
+}
+
+#Aimg {
+  display: flex;
+  justify-self: center;
+  height: 220px;
+  width: 250px;
+}
+
+@media only screen and (max-width: 900px) {
+  #apersoonlijk {
+    margin: 3%;
+  }
+
+  #aintroductie > h1 {
+    display: flex;
+    flex-direction: row;
+    text-wrap: wrap;
+  }
+}
+
+/*------------------------------------------------------->    Waleed CSS   <-------------------------------------------------------- */
+
+#Wasection{
+  padding: 100px 200px;
+}
+
+#Wamain{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+span{
+  color: blue;
+}  
+
+#Waimg{
+ position:relative;
+ top: 15px;
+ width: 400px;
+ height: 350px;
+ left: 100px;
+}
+
+#Waol{
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(96, 71, 238);
+}
+#Wabody{
+  background-color: rgb(206, 213, 224);
+  height: 2000px;
+}
+
+#Waheader{
+  width: 100%;
+  background-color: rgb(188, 205, 203);
+  z-index: 2313;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  #Wamain {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  #Waimg {
+    left: 0px;
+  }
+}
+
+
+/*------------------------------------------------------->    Contact CSS   <-------------------------------------------------------- */
+
+#CMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.formulier {
+  background-color: #00365e;
+  border-radius: 15px;
+  margin-top: 3%;
+  padding: 20px;
+  width: 300px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+}
+
+form h2{
+  color: white;
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 12px; 
+  font-size: 16px;
+}
+
+input {
+  width: 93%; 
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.Submit {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: #dd0069;
+  color: #ffffff;
+  margin-top: 12px;
+  width: 100%; 
+}
+
+.Contact{
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: #dd0069;
+  color: #ffffff;
+  margin-top: 12px;
+  width: 100%; 
+  
+}
+
+#Formp {
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #ffffff;
+}
